@@ -1,6 +1,6 @@
 package questao18.automovel.model;
 
-public abstract class Automovel {
+public class Automovel {
     private int numRodas;
     private int velMax;
     private Boolean ligado;
@@ -35,6 +35,8 @@ public abstract class Automovel {
         this.ligado = ligado;
     }
 
-    abstract public void ligar();
+     public void ligar(){
+        this.setLigado(Boolean.TRUE);
+     }
 
 }
